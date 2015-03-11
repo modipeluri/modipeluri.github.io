@@ -59,11 +59,9 @@ This pattern bugged me a lot, because I couldn't come up with a flexible enough 
 
 My first idea was to go with modifier classes on the element.
 
-```
-.component-header.component-header-md
-```
+`.component-header.component-header-md`
 
-This would however require all three, header, body and footer to have their own modifier classes. Alternatively I could add the modifier class to the containing element. However this solution is pretty ugly because it forces you to nest your header, body and footer inside a containing class in your SCSS.
+This would, however require all three, header, body and footer to have their own modifier classes. Alternatively I could add the modifier class to the containing element. However this solution is pretty ugly because it forces you to nest your header, body and footer inside a containing class in your SCSS.
 
 As the number of variants increases, so does the number of your modifiers, making for ugly nested CSS with lots of repetition:
 
@@ -101,7 +99,7 @@ Look at this mess, three levels of nesting. At this point the specificity of our
 
 ## Final solution
 
-A solution which I used separates the layout and appearance of the component. I don't know if "height" is really a layout rule, or an appearance rule, but in this case it's more of a appearance rule.
+A solution which I'm pretty happy with uses separate classes for layout and appearance. I don't know if "height" is really a layout rule, or an appearance rule, but in this case (because of abs-positioning) it's more of an appearance rule.
 
 The separation of concerns becomes easy:
 
