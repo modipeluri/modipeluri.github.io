@@ -1,3 +1,8 @@
+---
+layout: post
+title: More flexible UI-component patterns
+---
+
 # More flexible UI-component patterns
 
 I'm currently the only developer working with CSS for the application we develop at work. This has given me the chance to architect the CSS as I best see fit. Writing 8000 lines of SCSS, has taught me quite a few things I didn't know about CSS before, and I'd like to share one epiphany with you.
