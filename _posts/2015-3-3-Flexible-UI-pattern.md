@@ -3,7 +3,7 @@ layout: post
 title: More flexible UI-component patterns
 ---
 
-I'm currently the only developer working with CSS for the application we develop at work. This has given me the chance to architect the CSS as I best see fit. Writing 8000 lines of SCSS, has taught me quite a few things I didn't know about CSS before, and I'd like to share one epiphany with you.
+I'm currently the only developer working with CSS for the application we develope. This has given me the chance to architect the code as I best see fit. Writing some 8000+ lines of SCSS has taught me a lot, and I'd like to share one epiphany with you.
 
 This web application uses the same design pattern over and over again. I'm not sure what exactly this pattern is called, but I'll just call it scrollbox for a lack of a better name. 
 
