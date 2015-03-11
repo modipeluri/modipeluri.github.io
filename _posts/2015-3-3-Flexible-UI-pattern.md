@@ -4,7 +4,7 @@ title: More flexible UI-component patterns
 ---
 
 I'm currently the only developer working with CSS for the application we develope. This has given me the chance to architect the code as I best see fit. Writing some 8000+ lines of SCSS has taught me a lot, and I'd like to share one epiphany with you.
-
+ 
 This web application uses the same design pattern over and over again. I'm not sure what exactly this pattern is called, but I'll just call it scrollbox for a lack of a better name. 
 
 !(https://github.com/modipeluri/modipeluri.github.io/raw/master/images/scrollbox.png "Logo Title Text 1")
