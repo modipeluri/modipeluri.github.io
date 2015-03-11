@@ -21,14 +21,16 @@ The component is placed in a variable size container. The container size depends
 
 We place the header inside the containing div, and give it a height of 40px which is enough to fit our title, and a search box under one another.
 
-```.component-header {
+```
+.component-header {
 	height: 40px;
 }
 ```
 
 To get the component body to span from the bottom of the header to the top of the footer, we need to absolute position it like this:
 
-```.component-body {
+```
+.component-body {
 	position: absolute;
 	top: 40px;
 	bottom: 40px;
@@ -39,7 +41,8 @@ To get the component body to span from the bottom of the header to the top of th
 
 We also need to absolute position our components footer, to get it to stay at the bottom of the component.
 
-```.component-footer {
+```
+.component-footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -56,12 +59,15 @@ This pattern bugged me a lot, because I couldn't come up with a flexible enough 
 
 My first idea was to go with modifier classes on the element.
 
+```
 .component-header.component-header-md
+```
 
 This would however require all three, header, body and footer to have their own modifier classes. Alternatively I could add the modifier class to the containing element. However this solution is pretty ugly because it forces you to nest your header, body and footer inside a containing class in your SCSS.
 
 As the number of variants increases, so does the number of your modifiers, making for ugly nested CSS with lots of repetition:
 
+```
 .component-container {
 	.component-header {
 		/* regular styles */
@@ -89,9 +95,9 @@ As the number of variants increases, so does the number of your modifiers, makin
 		}
 	}
 }
+```
 
 Look at this mess, three levels of nesting. At this point the specificity of our .component-body inside of the modifier class is already three. And that is two too many.
-
 
 ## Final solution
 
@@ -99,6 +105,7 @@ A solution which I used separates the layout and appearance of the component. I 
 
 The separation of concerns becomes easy:
 
+```
 .component-header, .component-body, .component-footer {
 	position: absolute;
 	left: 0;
@@ -112,6 +119,7 @@ The separation of concerns becomes easy:
 .component-footer {
 	bottom: 0;
 }
+```
 
 we then give the appearance, including height, in a per component rule set, for example
 
