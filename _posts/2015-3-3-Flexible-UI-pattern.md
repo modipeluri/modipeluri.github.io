@@ -7,9 +7,7 @@ I'm currently the only developer working with CSS for the application we develop
  
 This web application uses the same design pattern over and over again. I'm not sure what exactly this pattern is called, but I'll just call it scrollbox for a lack of a better name. 
 
-!(https://github.com/modipeluri/modipeluri.github.io/raw/master/images/scrollbox.png "Logo Title Text 1")
-The scrollbox component consists of a header, body and footer. 
-
+!["scrollbox"](/images/scrollbox.png "The scrollbox component consists of a header, body and footer. ")
 
 The header contains the title, possible a dropdown-menu icon and a search box. Depending on the component, the header can be quite tall, or very short. I think currently it ranges from 24 to 80px.
 
