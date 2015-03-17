@@ -74,5 +74,3 @@ exclude:
     - README.md
 
 
-pygments: false
-highlighter: null
