@@ -148,7 +148,7 @@ Now we've gotten a rid of our horizontal scrollbar, we can apply the same techni
 }
 ```
 
-!["final state"](/images/final-state.png "Perfectly lined up columns and table headers")
+!["final state"](/images/final-state.png "Perfectly lined up columns and table headers") 
 
 And with this we have achieved our goal of perfectly lining up the table headers and columns in a crossbrowser compatible manner.
 
