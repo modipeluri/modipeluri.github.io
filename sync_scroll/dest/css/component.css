@@ -1,0 +1,70 @@
+.table-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10%;
+  height: 80%;
+  max-height: 400px;
+  overflow: hidden;
+  background: #fff;
+  border: 30px solid #fff;
+  border-radius: 1px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.25); }
+  .table-container:before, .table-container:after {
+    content: " ";
+    display: table; }
+  .table-container:after {
+    clear: both; }
+
+.table-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 40px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: scroll;
+  box-sizing: content-box;
+  padding-bottom: 20px;
+  margin-right: -20px;
+  padding-right: 20px; }
+
+.table-heading {
+  width: 200px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* for long column names */ }
+
+.table-body {
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 40px;
+  bottom: 0px;
+  overflow: scroll;
+  transform: translate3d(0, 0, 0); }
+
+.table-row {
+  white-space: nowrap; }
+  .table-row:before, .table-row:after {
+    content: " ";
+    display: table; }
+  .table-row:after {
+    clear: both; }
+
+.table-cell {
+  display: inline-block;
+  height: 20px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* for long cell values names */ }
+
+/*# sourceMappingURL=component.css.map */
