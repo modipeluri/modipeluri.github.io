@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Perfectly) syncing table header and body horizontal scroll
+title:  Fix desynced scrollPos caused by scrollbar
 ---
 
 ## The situation
