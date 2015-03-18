@@ -2,9 +2,6 @@
 layout: post
 title:  Fix desynced scrollPos caused by scrollbar
 ---
-
-## The situation
-
 Recently I ran into a small, but annoying issue issue while coding a raw data viewer component. The solution I came up with is perhaps a bit unorthodox, some might even call it hacky. Hacky or not, it works in all browsers (even IE8), and is probably less of a hassle than implementing a fix with JavaScript, I thought I'd share it with you.
 
 The problem occurs when you have a table with both vertical and horizontal scrolling, as well as a requirement to keep the table headings fixed to the top.
