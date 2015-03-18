@@ -152,4 +152,4 @@ Now we've gotten a rid of our horizontal scrollbar, we can apply the same techni
 
 And with this we have achieved our goal of perfectly lining up the table headers and columns in a crossbrowser compatible manner.
 
-You can see a demo here
+[Demo here](http://modipeluri.github.io/demos/sync_scroll/dest/)
