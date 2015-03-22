@@ -112,7 +112,10 @@ When the user scrolls all the way to right, this results in an akward effect. Th
 ## The solution
 
 To solve the desync problem in a crossbrowser manner, we can force a vertical scrollbar on the table header as well.
-`table-header {overflow-y: scroll;}`
+
+```
+table-header {overflow-y: scroll;}
+```
 
 !["forced scrollbar"](/images/forced-scrollbar.png "Forced vertical scrollbar on table header")
 
