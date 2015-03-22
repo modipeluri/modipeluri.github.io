@@ -97,7 +97,7 @@ $(document).ready(function() {
         var currentScroll = $("div.table-body").scrollLeft();
         $('div.table-header').scrollLeft(currentScroll);
     });
-});
+});t
 ```
 
 Now when the user scrolls the table body, the table header scrolls as well.
@@ -120,8 +120,6 @@ table-header {overflow-y: scroll;}
 !["forced scrollbar"](/images/forced-scrollbar.png "Forced vertical scrollbar on table header")
 
 Now the content area will be exactly the same width cross-browser. However we've ruined the appearance of our beautiful table. Optimally we don't want to show horizontal nor vertical scrollbars in our table header.
-
- to the rescue! By 
 
 To visually hide them we can hide the horizontal scrollbar behind the table body.
 
