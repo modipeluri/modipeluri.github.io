@@ -90,6 +90,7 @@ As we can see from the HTML, the table header has to be positioned outside of th
 To fix this, we use some simple jQuery to sync the horizontal scroll between the two.
 
 Like so:
+
 ```
 $(document).ready(function() {
     $('div.table-body').scroll(function () {
